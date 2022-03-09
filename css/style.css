@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cormorant Upright", serif;
+  font-style: italic;
+}
+.cont {
+  box-sizing: border-box;
+  color: white;
+  background: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0.9) 2%,
+      transparent 20%
+    ),
+    linear-gradient(to top, hsla(0, 0%, 0%, 0.9) 1%, transparent 30%),
+    url("../winter-landing.png") no-repeat center center / cover;
+  height: 100vh;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+header button {
+  font-family: "Cormorant Upright", serif;
+  font-style: italic;
+  font-size: larger;
+  padding: 15px 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #ca5603;
+  transition: .4s;
+}
+header button:hover{
+  background-color: white;
+  color: #ca5603;
+  font-weight: 500;
+}
+main {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+
+}
+main h1 {
+  font-size: 6em;
+  opacity: 0.8;
+}
+.dots {
+  background-color: #ca5603;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  margin-left: 10px;
+}
+#triangle {
+	background-color: #ca5603;
+	clip-path: polygon(50% 0, 100% 100%, 0 100%);
+	width: 25px;
+	height: 25px;
+	display: inline-flex;
+}
+footer{
+  margin-bottom: 40px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 40px;
+  justify-self: flex-end;
+}
+footer .left-content h1{
+  font-size: 6em;
+  display: inline;
+}
+footer .left-content h3{
+  font-size: 2em;
+  color: #ca5603;
+  display: inline-flex;
+}
+footer .right-icons i{
+  font-size: 35px;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+footer .right-icons i:hover {
+  color: #ca5603;
+}
+main .info i {
+  font-size: 25px;
+}
+main .info {
+  position:absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  right: 0px;
+  top: 50%;
+  transition: .4s;
+  cursor: pointer;
+  background-color: #ca5603;
+  padding: 20px;
+  border-radius: 50px 0px 0px 50px;
+}
+main .info:hover{
+  background-color: white;
+}
+main .info:hover p{
+  display: block;
+}
+
+main .info p {
+  transition: 0.4s;
+  color: #000;
+  font-weight: bold;
+  margin-left: 5px;
+  display: none;
+  font-size: 17px;
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+
+  main h1 {
+  font-size: 3.5em;
+  }
+  .dots {
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+  }
+  footer .left-content h1{
+    font-size: 3em;
+  }
+  footer .left-content h3{
+    font-size: 1.5em;
+  }
+  footer .right-icons i{
+    font-size: 20px;
+    padding-left:10px;
+  }
+  header button {
+  padding: 7px 25px;
+  border-radius: 50px;
+  font-size: 1em;
+  }
+  header, footer{
+    margin:10px 0;
+  }
+  header a {
+    font-size: 20px;
+  }
+  #triangle {
+    width: 10px;
+    height: 10px;
+  }
+  main .info i {
+  font-size: 15px;
+  }
+  main .info {
+    padding: 15px;
+  }
+  main .info p{
+    font-size: 10px;
+  }
+}
+/* Small Screens */
+
+@media screen and  (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+
+@media screen and  (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screens */
+
+@media screen and  (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  main h1 {
+  font-size: 10em;
+  }
+}
